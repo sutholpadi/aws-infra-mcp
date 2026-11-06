@@ -17,7 +17,7 @@ jobs:
           go-version: '1.27'
 
       - name: Build the application
-        run: go build -o ./bin/aws-infra-mcp ./main.go
+        run: go build -o ./bin/aws-infra-mcp ./cmd/aws-infra-mcp/main.go
 
       - name: Run tests
         run: go test ./...
